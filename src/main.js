@@ -217,6 +217,9 @@ const greetings = {
   viv: "Viv",
   mimi: "Mimi",
   brian: "Brian",
+  wendy: "Wendy",
+  hayley: "Hayley",
+  ralph: "Ralph",
 };
 
 // Read the recipient from the website link
