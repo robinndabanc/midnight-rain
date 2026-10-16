@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import { resolve } from "node:path";
 
 export default defineConfig({
   base: "./",
@@ -7,8 +6,8 @@ export default defineConfig({
   build: {
     rolldownOptions: {
       input: {
-        main: resolve(import.meta.dirname, "index.html"),
-        zodiac: resolve(import.meta.dirname, "zodiac.html")
+        main: "index.html",
+        zodiac: "zodiac.html"
       }
     }
   }
