@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4ece3" />
+    <meta
+      name="description"
+      content="A little moonlight, a quiet moment, and a note from the sky."
+    />
+    <title>midnight rain | the planets and the fates and all the stars aligned</title>
+  </head>
+
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="Midnight Rain home">
+          midnight rain<span class="wordmark-sparkle" aria-hidden="true"></span>
+        </a>
+
+        <span class="eyebrow" id="sky-status">
+          HALF MOONSHINE, A FULL ECLIPSE
+        </span>
+      </header>
+
+      <section class="moon-experience" aria-label="Today's moon">
+        <div class="moon-meta">
+          <span class="eyebrow">MADE BY PRECIA</span>
+          <span id="local-time">Local time</span>
+        </div>
+
+        <div class="moon-stage">
+          <div
+            class="moon-decoration moon-decoration-one"
+            aria-hidden="true"
+          >✧</div>
+
+          <div
+            class="moon-decoration moon-decoration-two"
+            aria-hidden="true"
+          >·</div>
+
+          <div
+            class="moon-decoration moon-decoration-three"
+            aria-hidden="true"
+          >✦</div>
+
+          <div
+            class="moon-decoration moon-decoration-four"
+            aria-hidden="true"
+          >✦</div>
+
+          <a
+  href="./zodiac.html"
+  class="zodiac-star-button"
+  aria-label="Explore the zodiac"
+  title="Explore the zodiac"
+>
+  
+   <span
+  class="zodiac-button-art"
+  aria-hidden="true"
+></span>
+  >
+    <path
+      class="mini-constellation-lines"
+      d="M 12 48
+         L 32 20
+         L 55 35
+         L 78 12
+         L 90 50
+         L 55 35
+         L 48 65"
+    />
+
+    <circle cx="12" cy="48" r="3" />
+    <circle cx="32" cy="20" r="4" />
+    <circle cx="55" cy="35" r="3" />
+    <circle cx="78" cy="12" r="4" />
+    <circle cx="90" cy="50" r="3" />
+    <circle cx="48" cy="65" r="3" />
+
+
+  <span class="zodiac-star-tooltip">
+    Explore the stars ✧
+  </span>
+</a>
+          
+          <div id="moon-loader" class="moon-loader" role="status" aria-live="polite">
+            <span class="loader-sparkle" aria-hidden="true">✧</span>
+           <span class="loader-text"> Gathering moonlight<span class="loading-dots" aria-hidden="true">...</span> 
+          </span>
+           <span class="moon-loading-track" aria-hidden="true">
+            <span class="moon-loading-progress"></span>
+           </span>
+          </div>
+          
+          <span class="moon-hint">✧ TAP THE MOON FOR YOUR FORTUNE ✧</span>
+
+          <button
+            id="moon-button"
+            class="moon-button"
+            type="button"
+            aria-label="Reveal a little note from the moon"
+          >
+            <canvas
+              id="moon-canvas"
+              width="640"
+              height="640"
+              role="img"
+              aria-label="Illustration of the current moon phase"
+            ></canvas>
+          </button>
+
+        </div>
+
+        <div class="moon-information">
+          <p class="eyebrow">TONIGHT'S MOON PHASE</p>
+          <h2 id="moon-phase">Calculating...</h2>
+          <p id="moon-illumination" class="moon-illumination">
+            Calculating illumination
+          </p>
+        </div>
+
+        <div
+          id="fortune-card"
+          class="fortune-card"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <span class="fortune-sparkle" aria-hidden="true">✧</span>
+          <p id="moon-note">
+            Tap the moon to receive your first little note.
+          </p>
+        </div>
+
+        <p class="moon-date" id="moon-date"></p>
+      </section>
+
+      <details class="location-section">
+        <summary>
+          <span id="location-name">Melbourne, Australia</span>
+        </summary>
+
+        <div class="location-controls">
+          <button
+            id="locate-button"
+            class="text-button"
+            type="button"
+          >
+            Use my location ↗
+          </button>
+
+          <form id="search-form" class="search-form">
+            <label class="sr-only" for="location-search">
+              Search for a city
+            </label>
+
+            <input
+              id="location-search"
+              type="search"
+              placeholder="Find another place..."
+              autocomplete="off"
+            />
+
+            <button type="submit">Explore</button>
+          </form>
+
+          <p id="coordinates" class="coordinates"></p>
+          <p id="message" class="message" role="status" aria-live="polite"></p>
+        </div>
+      </details>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
